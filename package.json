@@ -1,0 +1,56 @@
+{
+  "name": "jekyll-starter-tailwind",
+  "version": "6.0.0",
+  "description": "A starter kit for using Tailwind with Jekyll",
+  "main": "gulpfile.babel.js",
+  "devDependencies": {
+    "autoprefixer": "10.2.5",
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "browser-sync": "2.26.14",
+    "cross-env": "7.0.3",
+    "cross-spawn": "7.0.3",
+    "cssnano": "4.1.10",
+    "gulp": "4.0.2",
+    "gulp-postcss": "9.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss": "8.2.8",
+    "postcss-import": "14.0.0",
+    "tailwindcss": "2.0.4"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "scripts": {
+    "build:production": "cross-env NODE_ENV=production gulp",
+    "build:dev": "cross-env NODE_ENV=development gulp",
+    "build": "npm run build:production",
+    "build-prod": "NODE_ENV=production run-s build",
+    "dev": "cross-env NODE_ENV=development gulp serve",
+    "start": "npm run dev",
+    "lodash": "npx lodash-cli strict -o ./dist/lodash.js include=$( grep -roh \"_\\.[[:alpha:]]*\" /assets/js/ --include=*.js | sort | uniq | cut -b 3- | tr \"\n\" \",\" )",
+    "composer:install": "composer install",
+    "postinstall": "run-s postinstall:build",
+    "postinstall:build": "if [ \"$NODE_ENV\" != \"production\" ]; then npm run start; fi",
+    "postinstall:lodash": "npm run lodash",
+    "postinstall:composer": "npm run composer:install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind.git"
+  },
+  "author": "Taylor Bryant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "color": "^3.1.3",
+    "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
+    "shorten-css-hex": "^1.1.0"
+  }
+}

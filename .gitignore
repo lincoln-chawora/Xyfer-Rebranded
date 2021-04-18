@@ -1,0 +1,10 @@
+_site
+.DS_Store
+.jekyll-cache
+.jekyll-metadata
+assets/css
+node_modules
+.bundle/
+vendor
+libraries
+dist

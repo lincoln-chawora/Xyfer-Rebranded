@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% include components/atoms/heading.html heading_level=1 heading=page.title %}
+
+<p>
+  {{ page.date | date_to_string }}
+  {% assign author = site.authors | where: 'short_name', page.author | first %}
+  {% if author %}
+  - {% include components/atoms/link.html link=author.url link_text=author.name %}
+  {% endif %}
+</p>
+
+{{ content }}

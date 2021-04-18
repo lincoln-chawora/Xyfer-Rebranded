@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% capture page_title %}
+  {{ page.name }}'s Landing Page
+{% endcapture %}
+{% include components/atoms/heading.html heading_level=1 heading=page_title %}
+{% include components/atoms/heading.html heading=page.position %}
+
+{{ content }}
+
+{% include components/atoms/heading.html heading="Posts" %}
+<ul>
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% for post in filtered_posts %}
+    <li>
+      {% include components/atoms/link.html link=post.url link_text=post.title %}
+    </li>
+  {% endfor %}
+</ul>

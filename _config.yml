@@ -1,0 +1,38 @@
+title: Xyfer
+description: Lincoln Chawora Portfolio
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+img_dir: "/assets/images"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - vendor
+  - libraries
+  - dist
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.js
+  - netlify.toml

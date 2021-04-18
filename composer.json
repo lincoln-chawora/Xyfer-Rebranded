@@ -1,0 +1,35 @@
+{
+    "name": "jekyll/xyfer",
+    "description": "Used to bring in npm assets on Composer install",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Lincoln Chawora",
+            "email": "Lincoln_1996@hotmail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.10",
+        "cweagans/composer-patches": "^1.7",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "npm-asset/vue": "^2.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-types": [
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "libraries/{$name}": [
+                "type:npm-asset"
+            ]
+        }
+    }
+}

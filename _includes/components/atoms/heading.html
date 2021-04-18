@@ -1,0 +1,13 @@
+{% if include.heading_level %}
+    {% assign heading_level = include.heading_level %}
+{% else %}
+    {% assign heading_level = 2 %}
+{% endif %}
+
+{% if include.omit_base_class  %}
+    {% capture heading_classes  %}{{ include.heading_classes }}{% endcapture %}
+{% else %}
+    {% capture heading_classes  %}u-text-h{{ heading_level }} {{ include.heading_classes }}{% endcapture %}
+{% endif %}
+
+<h{{ heading_level }} class="{{ heading_classes }}">{{ include.heading }}</h{{ heading_level }}>
