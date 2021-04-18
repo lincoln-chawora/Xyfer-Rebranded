@@ -6,10 +6,13 @@ import { dest, series, src, task, watch } from "gulp";
 import postcss from "gulp-postcss";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
+import sass from "gulp-sass";
+import uglify from "gulp-uglify";
+import purgecss from "@fullhuman/postcss-purgecss";
 
-const sass = require('gulp-sass');
 const SITE_ROOT = "./_site";
 const POST_BUILD_STYLESHEET = `${SITE_ROOT}/assets/css/`;
+const POST_BUILD_SCRIPT = `${SITE_ROOT}/assets/js/`;
 const PRE_BUILD_STYLESHEET = "./assets/styles/style.css";
 const TAILWIND_CONFIG = "./tailwind.js";
 
@@ -38,11 +41,32 @@ task("processStyles", () => {
       postcss([
         atimport(),
         tailwindcss(TAILWIND_CONFIG),
-        ...(isDevelopmentBuild ? [] : [autoprefixer(), cssnano()]),
+        ...(process.env.NODE_ENV === "production" ?
+                [
+                purgecss({
+                  content: [
+                    "**/*.html",
+                  ],
+                  defaultExtractor: content =>
+                      content.match(/[\w-/:]+(?<!:)/g) || []
+                })
+            ] : []
+        ),
       ])
     )
     .pipe(sass().on('error', sass.logError))
     .pipe(dest(POST_BUILD_STYLESHEET));
+});
+
+task('move-libraries-to-assets', () => {
+  return src("libraries/vue/dist/vue.js")
+      .pipe(dest(POST_BUILD_SCRIPT));
+});
+
+task('compress', () => {
+  return src(`${POST_BUILD_SCRIPT}/*.js`)
+      .pipe(uglify())
+      .pipe(dest(POST_BUILD_SCRIPT));
 });
 
 task("startServer", () => {
@@ -75,7 +99,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles");
+const buildSite = series("buildJekyll", "processStyles", "move-libraries-to-assets", "compress");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);

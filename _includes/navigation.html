@@ -1,7 +1,7 @@
 <div id="nav-bar" class="u-right-0 u-pr-1 u-w-full {% if page.url != '/' %}u-bg-black u-text-right{% else %} u-absolute {% endif %}">
   <div class="u-flex u-justify-between u-text-h4 u-text-white">
     <span><a href="/">Xyfer</a></span>
-    <span class="u-cursor-pointer hover:u-text-primary" @click="isOpen = !isOpen">&#9776; open</span>
+    <span class="u-cursor-pointer hover:u-text-gray-400" @click="isOpen = !isOpen">&#9776; open</span>
   </div>
   <nav class="overlay u-w-full u-fixed u-z-1 u-top-0 u-right-0 u-overflow-y-hidden u-bg-black u-bg-opacity-90" :class="{ 'u-h-full': isOpen}">
     <a href="javascript:void(0)" class="u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" @click="isOpen = !isOpen">&times;</a>

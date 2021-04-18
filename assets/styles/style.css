@@ -1,5 +1,13 @@
-@import "main.scss";
+@import "_tailwind.scss";
+@import "_tailwind-variables.scss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "overrides/_01-spacing-overrides.scss";
+@import "overrides/_03-colour-overrides.scss";
+
+/*
+@import "../../libraries/bootstrap/scss/_functions.scss";
+@import "../../libraries/bootstrap/scss/_variables.scss";
+@import "../../libraries/bootstrap/scss/mixins";
+@import "../../libraries/bootstrap/scss/_reboot.scss";
+*/
+@import "main.scss";

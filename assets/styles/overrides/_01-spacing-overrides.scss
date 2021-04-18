@@ -1,0 +1,24 @@
+/* Refer to https://github.com/twbs/bootstrap/blob/v4.1.3/scss/_variables.scss
+  to find the correct variables to override below. */
+
+$spacer: $--padding--1;
+$spacerAsRem: rem-calc($--padding--1);
+
+$paragraph-margin-bottom: $spacer * 3;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $--screens--sm,
+  md: $--screens--md,
+  lg: $--screens--lg,
+  xl: $--screens--xl,
+  xxl: $--screens--xxl,
+);
