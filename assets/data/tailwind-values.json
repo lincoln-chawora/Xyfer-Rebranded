@@ -1,0 +1,1095 @@
+{
+  "colors": [
+    {
+      "key": "primary",
+      "value": "#3e4444",
+      "scssClass": "$--colors--primary",
+      "plugin": "colors"
+    },
+    {
+      "key": "secondary",
+      "value": "#5CB85C",
+      "scssClass": "$--colors--secondary",
+      "plugin": "colors"
+    },
+    {
+      "key": "tertiary",
+      "value": "#fff",
+      "scssClass": "$--colors--tertiary",
+      "plugin": "colors"
+    },
+    {
+      "key": "white",
+      "value": "#fff",
+      "scssClass": "$--colors--white",
+      "plugin": "colors"
+    },
+    {
+      "key": "light",
+      "value": "#fff",
+      "scssClass": "$--colors--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "black",
+      "value": "#000",
+      "scssClass": "$--colors--black",
+      "plugin": "colors"
+    },
+    {
+      "key": "dark",
+      "value": "#000",
+      "scssClass": "$--colors--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "green",
+      "value": "#5CB85C",
+      "scssClass": "$--colors--green",
+      "plugin": "colors"
+    },
+    {
+      "key": "dark-gray",
+      "value": "#3e4444",
+      "scssClass": "$--colors--dark-gray",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-25",
+      "value": "#f4f4f4",
+      "scssClass": "$--colors--grey-25",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-50",
+      "value": "#ebebeb",
+      "scssClass": "$--colors--grey-50",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-100",
+      "value": "#afb4b6",
+      "scssClass": "$--colors--grey-100",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-200",
+      "value": "#898e91",
+      "scssClass": "$--colors--grey-200",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-300",
+      "value": "#64696c",
+      "scssClass": "$--colors--grey-300",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-400",
+      "value": "#3c3c3b",
+      "scssClass": "$--colors--grey-400",
+      "plugin": "colors"
+    },
+    {
+      "key": "black-trans",
+      "value": "rgba(0,0,0,.55)",
+      "scssClass": "$--colors--black-trans",
+      "plugin": "colors"
+    },
+    {
+      "key": "success",
+      "value": "#449d44",
+      "scssClass": "$--colors--success",
+      "plugin": "colors"
+    },
+    {
+      "key": "danger",
+      "value": "#c9302c",
+      "scssClass": "$--colors--danger",
+      "plugin": "colors"
+    },
+    {
+      "key": "warning",
+      "value": "#ec971f",
+      "scssClass": "$--colors--warning",
+      "plugin": "colors"
+    },
+    {
+      "key": "green--dark",
+      "value": "#4aa94a",
+      "scssClass": "$--colors--green--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "green--light",
+      "value": "#73c273",
+      "scssClass": "$--colors--green--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "black--dark",
+      "value": "#000",
+      "scssClass": "$--colors--black--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "black--light",
+      "value": "#000",
+      "scssClass": "$--colors--black--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "dark-gray--dark",
+      "value": "#373c3c",
+      "scssClass": "$--colors--dark-gray--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "dark-gray--light",
+      "value": "#454c4c",
+      "scssClass": "$--colors--dark-gray--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "white--dark",
+      "value": "#e0e0e0",
+      "scssClass": "$--colors--white--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "white--light",
+      "value": "#fff",
+      "scssClass": "$--colors--white--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-25--dark",
+      "value": "#d7d7d7",
+      "scssClass": "$--colors--grey-25--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-25--light",
+      "value": "#fff",
+      "scssClass": "$--colors--grey-25--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-50--dark",
+      "value": "#cfcfcf",
+      "scssClass": "$--colors--grey-50--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-50--light",
+      "value": "#fff",
+      "scssClass": "$--colors--grey-50--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-100--dark",
+      "value": "#999fa2",
+      "scssClass": "$--colors--grey-100--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-100--light",
+      "value": "#c5c9ca",
+      "scssClass": "$--colors--grey-100--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-200--dark",
+      "value": "#787d80",
+      "scssClass": "$--colors--grey-200--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-200--light",
+      "value": "#9b9fa1",
+      "scssClass": "$--colors--grey-200--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-300--dark",
+      "value": "#585c5f",
+      "scssClass": "$--colors--grey-300--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-300--light",
+      "value": "#707679",
+      "scssClass": "$--colors--grey-300--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-400--dark",
+      "value": "#353534",
+      "scssClass": "$--colors--grey-400--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "grey-400--light",
+      "value": "#434342",
+      "scssClass": "$--colors--grey-400--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "youtube--dark",
+      "value": "#ea1317",
+      "scssClass": "$--colors--youtube--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "youtube--light",
+      "value": "#f15254",
+      "scssClass": "$--colors--youtube--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "twitter--dark",
+      "value": "#00a5d5",
+      "scssClass": "$--colors--twitter--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "twitter--light",
+      "value": "#10c9ff",
+      "scssClass": "$--colors--twitter--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "facebook--dark",
+      "value": "#446394",
+      "scssClass": "$--colors--facebook--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "facebook--light",
+      "value": "#5d7fb5",
+      "scssClass": "$--colors--facebook--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "instagram--dark",
+      "value": "#3c3c3c",
+      "scssClass": "$--colors--instagram--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "instagram--light",
+      "value": "#4c4c4c",
+      "scssClass": "$--colors--instagram--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "linkedin--dark",
+      "value": "#00699f",
+      "scssClass": "$--colors--linkedin--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "linkedin--light",
+      "value": "#0085cb",
+      "scssClass": "$--colors--linkedin--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "black-trans--dark",
+      "value": "#000",
+      "scssClass": "$--colors--black-trans--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "black-trans--light",
+      "value": "#000",
+      "scssClass": "$--colors--black-trans--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "primary--dark",
+      "value": "#373c3c",
+      "scssClass": "$--colors--primary--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "primary--light",
+      "value": "#454c4c",
+      "scssClass": "$--colors--primary--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "secondary--dark",
+      "value": "#4aa94a",
+      "scssClass": "$--colors--secondary--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "secondary--light",
+      "value": "#73c273",
+      "scssClass": "$--colors--secondary--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "tertiary--dark",
+      "value": "#e0e0e0",
+      "scssClass": "$--colors--tertiary--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "tertiary--light",
+      "value": "#fff",
+      "scssClass": "$--colors--tertiary--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "success--dark",
+      "value": "#3c8a3c",
+      "scssClass": "$--colors--success--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "success--light",
+      "value": "#4cb04c",
+      "scssClass": "$--colors--success--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "danger--dark",
+      "value": "#b12a27",
+      "scssClass": "$--colors--danger--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "danger--light",
+      "value": "#d5423e",
+      "scssClass": "$--colors--danger--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "warning--dark",
+      "value": "#d98612",
+      "scssClass": "$--colors--warning--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "warning--light",
+      "value": "#efa53d",
+      "scssClass": "$--colors--warning--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "light--dark",
+      "value": "#e0e0e0",
+      "scssClass": "$--colors--light--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "light--light",
+      "value": "#fff",
+      "scssClass": "$--colors--light--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "dark--dark",
+      "value": "#000",
+      "scssClass": "$--colors--dark--dark",
+      "plugin": "colors"
+    },
+    {
+      "key": "dark--light",
+      "value": "#000",
+      "scssClass": "$--colors--dark--light",
+      "plugin": "colors"
+    },
+    {
+      "key": "youtube",
+      "value": "#ee3235",
+      "scssClass": "$--colors--youtube",
+      "plugin": "colors"
+    },
+    {
+      "key": "twitter",
+      "value": "#00bbf2",
+      "scssClass": "$--colors--twitter",
+      "plugin": "colors"
+    },
+    {
+      "key": "facebook",
+      "value": "#4d70a8",
+      "scssClass": "$--colors--facebook",
+      "plugin": "colors"
+    },
+    {
+      "key": "instagram",
+      "value": "#444",
+      "scssClass": "$--colors--instagram",
+      "plugin": "colors"
+    },
+    {
+      "key": "linkedin",
+      "value": "#0077b5",
+      "scssClass": "$--colors--linkedin",
+      "plugin": "colors"
+    },
+    {
+      "key": "transparent",
+      "value": "transparent",
+      "scssClass": "$--colors--transparent",
+      "plugin": "colors"
+    }
+  ],
+  "colorsAllKeys": [
+    "transparent",
+    "green",
+    "black",
+    "dark-gray",
+    "white",
+    "grey-25",
+    "grey-50",
+    "grey-100",
+    "grey-200",
+    "grey-300",
+    "grey-400",
+    "youtube",
+    "twitter",
+    "facebook",
+    "instagram",
+    "linkedin",
+    "black-trans",
+    "primary",
+    "secondary",
+    "tertiary",
+    "success",
+    "danger",
+    "warning",
+    "light",
+    "dark",
+    "green--dark",
+    "green--light",
+    "black--dark",
+    "black--light",
+    "dark-gray--dark",
+    "dark-gray--light",
+    "white--dark",
+    "white--light",
+    "grey-25--dark",
+    "grey-25--light",
+    "grey-50--dark",
+    "grey-50--light",
+    "grey-100--dark",
+    "grey-100--light",
+    "grey-200--dark",
+    "grey-200--light",
+    "grey-300--dark",
+    "grey-300--light",
+    "grey-400--dark",
+    "grey-400--light",
+    "youtube--dark",
+    "youtube--light",
+    "twitter--dark",
+    "twitter--light",
+    "facebook--dark",
+    "facebook--light",
+    "instagram--dark",
+    "instagram--light",
+    "linkedin--dark",
+    "linkedin--light",
+    "black-trans--dark",
+    "black-trans--light",
+    "primary--dark",
+    "primary--light",
+    "secondary--dark",
+    "secondary--light",
+    "tertiary--dark",
+    "tertiary--light",
+    "success--dark",
+    "success--light",
+    "danger--dark",
+    "danger--light",
+    "warning--dark",
+    "warning--light",
+    "light--dark",
+    "light--light",
+    "dark--dark",
+    "dark--light"
+  ],
+  "colorsBootstrapTheme": [
+    "primary",
+    "secondary",
+    "tertiary",
+    "success",
+    "danger",
+    "warning",
+    "light",
+    "twitter",
+    "instagram",
+    "youtube",
+    "facebook",
+    "linkedin"
+  ],
+  "screens": [
+    {
+      "key": "sm",
+      "value": "576px",
+      "scssClass": "$--screens--sm",
+      "plugin": "screens"
+    },
+    {
+      "key": "md",
+      "value": "768px",
+      "scssClass": "$--screens--md",
+      "plugin": "screens"
+    },
+    {
+      "key": "lg",
+      "value": "992px",
+      "scssClass": "$--screens--lg",
+      "plugin": "screens"
+    },
+    {
+      "key": "xl",
+      "value": "1200px",
+      "scssClass": "$--screens--xl",
+      "plugin": "screens"
+    },
+    {
+      "key": "xxl",
+      "value": "1920px",
+      "scssClass": "$--screens--xxl",
+      "plugin": "screens"
+    }
+  ],
+  "screensAllKeys": [
+    "sm",
+    "md",
+    "lg",
+    "xl",
+    "xxl"
+  ],
+  "fontSize": [
+    {
+      "key": "h1",
+      "value": "61px",
+      "scssClass": "$--font-size--h1",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "h2",
+      "value": "49px",
+      "scssClass": "$--font-size--h2",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "h3",
+      "value": "39px",
+      "scssClass": "$--font-size--h3",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "h4",
+      "value": "31px",
+      "scssClass": "$--font-size--h4",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "h5",
+      "value": "25px",
+      "scssClass": "$--font-size--h5",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "hero",
+      "value": "95px",
+      "scssClass": "$--font-size--hero",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "large",
+      "value": "20px",
+      "scssClass": "$--font-size--large",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "medium",
+      "value": "16px",
+      "scssClass": "$--font-size--medium",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "sidekick",
+      "value": "76px",
+      "scssClass": "$--font-size--sidekick",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "small",
+      "value": "13px",
+      "scssClass": "$--font-size--small",
+      "plugin": "fontSize"
+    },
+    {
+      "key": "unset",
+      "value": "unset",
+      "scssClass": "$--font-size--unset",
+      "plugin": "fontSize"
+    }
+  ],
+  "fontSizeAllKeys": [
+    "small",
+    "medium",
+    "large",
+    "h5",
+    "h4",
+    "h3",
+    "h2",
+    "h1",
+    "sidekick",
+    "hero",
+    "unset"
+  ],
+  "fontWeights": [
+    {
+      "key": "bold",
+      "value": "600",
+      "scssClass": "$--font-weights--bold",
+      "plugin": "fontWeights",
+      "tailwindClass": "u-font-bold"
+    },
+    {
+      "key": "extra-bold",
+      "value": "800",
+      "scssClass": "$--font-weights--extra-bold",
+      "plugin": "fontWeights",
+      "tailwindClass": "u-font-extra-bold"
+    },
+    {
+      "key": "light",
+      "value": "300",
+      "scssClass": "$--font-weights--light",
+      "plugin": "fontWeights",
+      "tailwindClass": "u-font-light"
+    },
+    {
+      "key": "normal",
+      "value": "400",
+      "scssClass": "$--font-weights--normal",
+      "plugin": "fontWeights",
+      "tailwindClass": "u-font-normal"
+    },
+    {
+      "key": "thin",
+      "value": "200",
+      "scssClass": "$--font-weights--thin",
+      "plugin": "fontWeights",
+      "tailwindClass": "u-font-thin"
+    },
+    {
+      "key": "unset",
+      "value": "unset",
+      "scssClass": "$--font-weights--unset",
+      "plugin": "fontWeights",
+      "tailwindClass": "u-font-unset"
+    }
+  ],
+  "fontWeightsAllKeys": [
+    "thin",
+    "light",
+    "normal",
+    "bold",
+    "extra-bold",
+    "unset"
+  ],
+  "borderRadius": [
+    {
+      "key": "default",
+      "value": ".25rem",
+      "scssClass": "$--border-radius--default",
+      "plugin": "borderRadius",
+      "tailwindClass": "u-rounded"
+    },
+    {
+      "key": "full",
+      "value": "9999px",
+      "scssClass": "$--border-radius--full",
+      "plugin": "borderRadius",
+      "tailwindClass": "u-rounded-full"
+    },
+    {
+      "key": "lg",
+      "value": ".5rem",
+      "scssClass": "$--border-radius--lg",
+      "plugin": "borderRadius",
+      "tailwindClass": "u-rounded-lg"
+    },
+    {
+      "key": "none",
+      "value": "0",
+      "scssClass": "$--border-radius--none",
+      "plugin": "borderRadius",
+      "tailwindClass": "u-rounded-none"
+    },
+    {
+      "key": "sm",
+      "value": ".125rem",
+      "scssClass": "$--border-radius--sm",
+      "plugin": "borderRadius",
+      "tailwindClass": "u-rounded-sm"
+    }
+  ],
+  "borderRadiusAllKeys": [
+    "none",
+    "sm",
+    "default",
+    "lg",
+    "full"
+  ],
+  "leading": [
+    {
+      "key": "loose",
+      "value": "2",
+      "scssClass": "$--leading--loose",
+      "plugin": "leading",
+      "tailwindClass": "u-leading-loose"
+    },
+    {
+      "key": "none",
+      "value": "1",
+      "scssClass": "$--leading--none",
+      "plugin": "leading",
+      "tailwindClass": "u-leading-none"
+    },
+    {
+      "key": "normal",
+      "value": "1.5",
+      "scssClass": "$--leading--normal",
+      "plugin": "leading",
+      "tailwindClass": "u-leading-normal"
+    },
+    {
+      "key": "tight",
+      "value": "1.25",
+      "scssClass": "$--leading--tight",
+      "plugin": "leading",
+      "tailwindClass": "u-leading-tight"
+    },
+    {
+      "key": "tighter",
+      "value": "0.9",
+      "scssClass": "$--leading--tighter",
+      "plugin": "leading",
+      "tailwindClass": "u-leading-tighter"
+    },
+    {
+      "key": "unset",
+      "value": "unset",
+      "scssClass": "$--leading--unset",
+      "plugin": "leading",
+      "tailwindClass": "u-leading-unset"
+    }
+  ],
+  "leadingAllKeys": [
+    "none",
+    "tighter",
+    "tight",
+    "normal",
+    "loose",
+    "unset"
+  ],
+  "boxShadow": [
+    {
+      "key": "default",
+      "value": "0 2px 4px 0 rgba(0,0,0,0.10)",
+      "scssClass": "$--box-shadow--default",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "inner",
+      "value": "inset 0 2px 4px 0 rgba(0,0,0,0.06)",
+      "scssClass": "$--box-shadow--inner",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "lg",
+      "value": "0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)",
+      "scssClass": "$--box-shadow--lg",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "md",
+      "value": "0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)",
+      "scssClass": "$--box-shadow--md",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "none",
+      "value": "none",
+      "scssClass": "$--box-shadow--none",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline",
+      "value": "0 0 0 0.2rem #80b4d9",
+      "scssClass": "$--box-shadow--outline",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline-black",
+      "value": "0 0 0 0.2rem rgb(26, 26, 26)",
+      "scssClass": "$--box-shadow--outline-black",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline-dark",
+      "value": "0 0 0 0.2rem rgba(52,58,64,.5)",
+      "scssClass": "$--box-shadow--outline-dark",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline-primary",
+      "value": "0 0 0 0.2rem rgb(159, 162, 162)",
+      "scssClass": "$--box-shadow--outline-primary",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline-primary--darker",
+      "value": "0 0 0 0.2rem undefined",
+      "scssClass": "$--box-shadow--outline-primary--darker",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline-secondary",
+      "value": "0 0 0 0.2rem rgb(174, 220, 174)",
+      "scssClass": "$--box-shadow--outline-secondary",
+      "plugin": "boxShadow"
+    },
+    {
+      "key": "outline-tertiary",
+      "value": "0 0 0 0.2rem rgb(255, 255, 255)",
+      "scssClass": "$--box-shadow--outline-tertiary",
+      "plugin": "boxShadow"
+    }
+  ],
+  "boxShadowAllKeys": [
+    "default",
+    "md",
+    "lg",
+    "inner",
+    "outline",
+    "outline-primary",
+    "outline-secondary",
+    "outline-tertiary",
+    "outline-black",
+    "outline-primary--darker",
+    "outline-dark",
+    "none"
+  ],
+  "margin": [
+    {
+      "key": "0",
+      "value": "0",
+      "scssClass": "$--margin--0",
+      "plugin": "margin",
+      "tailwindClass": "u-m-0"
+    },
+    {
+      "key": "1",
+      "value": "8px",
+      "scssClass": "$--margin--1",
+      "plugin": "margin",
+      "tailwindClass": "u-m-1"
+    },
+    {
+      "key": "10",
+      "value": "80px",
+      "scssClass": "$--margin--10",
+      "plugin": "margin",
+      "tailwindClass": "u-m-10"
+    },
+    {
+      "key": "11",
+      "value": "88px",
+      "scssClass": "$--margin--11",
+      "plugin": "margin",
+      "tailwindClass": "u-m-11"
+    },
+    {
+      "key": "2",
+      "value": "16px",
+      "scssClass": "$--margin--2",
+      "plugin": "margin",
+      "tailwindClass": "u-m-2"
+    },
+    {
+      "key": "3",
+      "value": "24px",
+      "scssClass": "$--margin--3",
+      "plugin": "margin",
+      "tailwindClass": "u-m-3"
+    },
+    {
+      "key": "4",
+      "value": "32px",
+      "scssClass": "$--margin--4",
+      "plugin": "margin",
+      "tailwindClass": "u-m-4"
+    },
+    {
+      "key": "5",
+      "value": "40px",
+      "scssClass": "$--margin--5",
+      "plugin": "margin",
+      "tailwindClass": "u-m-5"
+    },
+    {
+      "key": "6",
+      "value": "48px",
+      "scssClass": "$--margin--6",
+      "plugin": "margin",
+      "tailwindClass": "u-m-6"
+    },
+    {
+      "key": "7",
+      "value": "56px",
+      "scssClass": "$--margin--7",
+      "plugin": "margin",
+      "tailwindClass": "u-m-7"
+    },
+    {
+      "key": "8",
+      "value": "64px",
+      "scssClass": "$--margin--8",
+      "plugin": "margin",
+      "tailwindClass": "u-m-8"
+    },
+    {
+      "key": "9",
+      "value": "72px",
+      "scssClass": "$--margin--9",
+      "plugin": "margin",
+      "tailwindClass": "u-m-9"
+    },
+    {
+      "key": "auto",
+      "value": "auto",
+      "scssClass": "$--margin--auto",
+      "plugin": "margin",
+      "tailwindClass": "u-m-auto"
+    }
+  ],
+  "marginAllKeys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "auto"
+  ],
+  "padding": [
+    {
+      "key": "0",
+      "value": "0",
+      "scssClass": "$--padding--0",
+      "plugin": "padding",
+      "tailwindClass": "u-p-0"
+    },
+    {
+      "key": "1",
+      "value": "8px",
+      "scssClass": "$--padding--1",
+      "plugin": "padding",
+      "tailwindClass": "u-p-1"
+    },
+    {
+      "key": "10",
+      "value": "80px",
+      "scssClass": "$--padding--10",
+      "plugin": "padding",
+      "tailwindClass": "u-p-10"
+    },
+    {
+      "key": "11",
+      "value": "80px",
+      "scssClass": "$--padding--11",
+      "plugin": "padding",
+      "tailwindClass": "u-p-11"
+    },
+    {
+      "key": "2",
+      "value": "16px",
+      "scssClass": "$--padding--2",
+      "plugin": "padding",
+      "tailwindClass": "u-p-2"
+    },
+    {
+      "key": "3",
+      "value": "24px",
+      "scssClass": "$--padding--3",
+      "plugin": "padding",
+      "tailwindClass": "u-p-3"
+    },
+    {
+      "key": "4",
+      "value": "32px",
+      "scssClass": "$--padding--4",
+      "plugin": "padding",
+      "tailwindClass": "u-p-4"
+    },
+    {
+      "key": "5",
+      "value": "40px",
+      "scssClass": "$--padding--5",
+      "plugin": "padding",
+      "tailwindClass": "u-p-5"
+    },
+    {
+      "key": "6",
+      "value": "48px",
+      "scssClass": "$--padding--6",
+      "plugin": "padding",
+      "tailwindClass": "u-p-6"
+    },
+    {
+      "key": "7",
+      "value": "56px",
+      "scssClass": "$--padding--7",
+      "plugin": "padding",
+      "tailwindClass": "u-p-7"
+    },
+    {
+      "key": "8",
+      "value": "64px",
+      "scssClass": "$--padding--8",
+      "plugin": "padding",
+      "tailwindClass": "u-p-8"
+    },
+    {
+      "key": "9",
+      "value": "72px",
+      "scssClass": "$--padding--9",
+      "plugin": "padding",
+      "tailwindClass": "u-p-9"
+    }
+  ],
+  "paddingAllKeys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ]
+}

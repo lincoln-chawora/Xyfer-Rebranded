@@ -115,6 +115,20 @@ module.exports = {
     extend: {
       /*
       |-----------------------------------------------------------------------------
+      | Colors                                  https://tailwindcss.com/docs/colors
+      |-----------------------------------------------------------------------------
+      |
+      | The color palette defined above is also assigned to the "colors" key of
+      | your Tailwind config. This makes it easy to access them in your CSS
+      | using Tailwind's config helper. For example:
+      |
+      | .error { color: config('colors.red') }
+      |
+      */
+
+      colors,
+      /*
+      |-----------------------------------------------------------------------------
       | Screens                      https://tailwindcss.com/docs/responsive-design
       |-----------------------------------------------------------------------------
       |
@@ -183,6 +197,297 @@ module.exports = {
         icon: '20px',
         logo: '300px',
       },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Height                                  https://tailwindcss.com/docs/height
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your height utility sizes. These can be
+      | percentage based, pixels, rems, or any other units. By default
+      | we provide a sensible rem based numeric scale plus some other
+      | common use-cases. You can, of course, modify these values as
+      | needed.
+      |
+      | Class name: .u-h-{size}
+      |
+      */
+
+      height: {
+        auto: 'auto',
+        '0': '0',
+        '1': `${spacingValue * 1}px`,
+        '2': `${spacingValue * 2}px`,
+        '3': `${spacingValue * 3}px`,
+        '4': `${spacingValue * 4}px`,
+        full: '100%',
+        screen: '100vh',
+        icon: '20px',
+        'image-header': '427px',
+        'image-header-small': '287px',
+        'image-header-large': '570px',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Minimum width                        https://tailwindcss.com/docs/min-width
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your minimum width utility sizes. These can
+      | be percentage based, pixels, rems, or any other units. We provide a
+      | couple common use-cases by default. You can, of course, modify
+      | these values as needed.
+      |
+      | Class name: .u-min-w-{size}
+      |
+      */
+
+      minWidth: {
+        '0': '0',
+        '1': `${spacingValue * 1}px`,
+        '2': `${spacingValue * 2}px`,
+        '3': `${spacingValue * 3}px`,
+        '4': `${spacingValue * 4}px`,
+        full: '100%',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Minimum height                      https://tailwindcss.com/docs/min-height
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your minimum height utility sizes. These can
+      | be percentage based, pixels, rems, or any other units. We provide a
+      | few common use-cases by default. You can, of course, modify these
+      | values as needed.
+      |
+      | Class name: .u-min-h-{size}
+      |
+      */
+
+      minHeight: {
+        '0': '0',
+        full: '100%',
+        screen: '100vh',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Maximum width                        https://tailwindcss.com/docs/max-width
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your maximum width utility sizes. These can
+      | be percentage based, pixels, rems, or any other units. By default
+      | we provide a sensible rem based scale and a "full width" size,
+      | which is basically a reset utility. You can, of course,
+      | modify these values as needed.
+      |
+      | Class name: .u-max-w-{size}
+      |
+      */
+
+      maxWidth: {
+        '0': '0',
+        '1/2': '50%',
+        '1/3': '33.33333%',
+        '2/3': '66.66667%',
+        '1/4': '25%',
+        '3/4': '75%',
+        full: '100%',
+        screen: '100vw',
+        measure: '66ch',
+        'measure-lg': '80ch',
+        'measure-sm': '40ch',
+        logo: '100px',
+        '1920': '1920px',
+        '450': '450px',
+        container: 'var(--container-max-width)',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Maximum height                      https://tailwindcss.com/docs/max-height
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your maximum height utility sizes. These can
+      | be percentage based, pixels, rems, or any other units. We provide a
+      | couple common use-cases by default. You can, of course, modify
+      | these values as needed.
+      |
+      | Class name: .u-max-h-{size}
+      |
+      */
+
+      maxHeight: {
+        '0': '0',
+        full: '100%',
+        screen: '100vh',
+        logo: '60px',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Padding                                https://tailwindcss.com/docs/padding
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your padding utility sizes. These can be
+      | percentage based, pixels, rems, or any other units. By default we
+      | provide a sensible rem based numeric scale plus a couple other
+      | common use-cases like "1px". You can, of course, modify these
+      | values as needed.
+      |
+      | Class name: .u-p{side?}-{size}
+      |
+      */
+
+      padding: {
+        '0': '0',
+        '1': `${spacingValue * 1}px`,
+        '2': `${spacingValue * 2}px`,
+        '3': `${spacingValue * 3}px`,
+        '4': `${spacingValue * 4}px`,
+        '5': `${spacingValue * 5}px`,
+        '6': `${spacingValue * 6}px`,
+        '7': `${spacingValue * 7}px`,
+        '8': `${spacingValue * 8}px`,
+        '9': `${spacingValue * 9}px`,
+        '10': `${spacingValue * 10}px`,
+        '11': `${spacingValue * 10}px`,
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Margin                                  https://tailwindcss.com/docs/margin
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your margin utility sizes. These can be
+      | percentage based, pixels, rems, or any other units. By default we
+      | provide a sensible rem based numeric scale plus a couple other
+      | common use-cases like "1px". You can, of course, modify these
+      | values as needed.
+      |
+      | Class name: .u-m{side?}-{size}
+      |
+      */
+
+      margin: {
+        auto: 'auto',
+        '0': '0',
+        '1': `${spacingValue}px`,
+        '2': `${spacingValue * 2}px`,
+        '3': `${spacingValue * 3}px`,
+        '4': `${spacingValue * 4}px`,
+        '5': `${spacingValue * 5}px`,
+        '6': `${spacingValue * 6}px`,
+        '7': `${spacingValue * 7}px`,
+        '8': `${spacingValue * 8}px`,
+        '9': `${spacingValue * 9}px`,
+        '10': `${spacingValue * 10}px`,
+        '11': `${spacingValue * 11}px`,
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Negative margin                https://tailwindcss.com/docs/negative-margin
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your negative margin utility sizes. These can
+      | be percentage based, pixels, rems, or any other units. By default we
+      | provide matching values to the padding scale since these utilities
+      | generally get used together. You can, of course, modify these
+      | values as needed.
+      |
+      | Class name: .u--m{side?}-{size}
+      |
+      */
+
+      negativeMargin: {
+        '1': `${spacingValue}px`,
+        '2': `${spacingValue * 2}px`,
+        '3': `${spacingValue * 3}px`,
+        '4': `${spacingValue * 4}px`,
+        '5': `${spacingValue * 5}px`,
+        '6': `${spacingValue * 6}px`,
+        '7': `${spacingValue * 7}px`,
+        '8': `${spacingValue * 8}px`,
+        '9': `${spacingValue * 9}px`,
+        '10': `${spacingValue * 10}px`,
+        '11': `${spacingValue * 11}px`,
+        'grid-spacing': '16px',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Shadows                                https://tailwindcss.com/docs/shadows
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your shadow utilities. As you can see from
+      | the defaults we provide, it's possible to apply multiple shadows
+      | per utility using comma separation.
+      |
+      | If a `default` shadow is provided, it will be made available as the non-
+      | suffixed `.shadow` utility.
+      |
+      | Class name: .u-shadow-{size?}
+      |
+      */
+
+      boxShadow: {
+        default: '0 2px 4px 0 rgba(0,0,0,0.10)',
+        md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
+        lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+        inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+        outline: '0 0 0 0.2rem #80b4d9',
+        'outline-primary': `0 0 0 0.2rem ${color(colors.primary).mix(
+            color(colors.white),
+            0.5,
+        )}`,
+        'outline-secondary': `0 0 0 0.2rem ${color(colors.secondary).mix(
+            color(colors.white),
+            0.5,
+        )}`,
+        'outline-tertiary': `0 0 0 0.2rem ${color(colors.tertiary).mix(
+            color(colors.white),
+            0.5,
+        )}`,
+        'outline-black': `0 0 0 0.2rem ${color(colors.black).mix(
+            color(colors.white),
+            0.1,
+        )}`,
+        'outline-primary--darker': `0 0 0 0.2rem ${colors['primary--darker']}`,
+        'outline-dark': `0 0 0 0.2rem rgba(52,58,64,.5)`,
+        none: 'none',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Z-index                                https://tailwindcss.com/docs/z-index
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your z-index utility values. By default we
+      | provide a sensible numeric scale. You can, of course, modify these
+      | values as needed.
+      |
+      | Class name: .u-z-{index}
+      |
+      */
+
+      zIndex: {
+        auto: 'auto',
+        '0': 0,
+        '1': 1,
+        '10': 10,
+        '20': 20,
+        '30': 30,
+        '40': 40,
+        '50': 50,
+        '400': 400,
+        '410': 410,
+        '420': 420,
+        '501': 501, // Drupal Contextual Links are 500
+        '1251': 1251, // Drupal admin toolbar is 1250
+      },
+
       /*
       |-----------------------------------------------------------------------------
       | Text sizes                         https://tailwindcss.com/docs/text-sizing
@@ -344,6 +649,49 @@ module.exports = {
         '4': '4px',
         '6': '6px',
         '8': '8px',
+      },
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Border colors                     https://tailwindcss.com/docs/border-color
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your border colors. By default these use the
+      | color palette we defined above, however you're welcome to set these
+      | independently if that makes sense for your project.
+      |
+      | Take note that border colors require a special "default" value set
+      | as well. This is the color that will be used when you do not
+      | specify a border color.
+      |
+      | Class name: .u-border-{color}
+      |
+      */
+
+      borderColors: global.Object.assign({ default: colors['grey-100'] }, colors),
+
+      /*
+      |-----------------------------------------------------------------------------
+      | Border radius                    https://tailwindcss.com/docs/border-radius
+      |-----------------------------------------------------------------------------
+      |
+      | Here is where you define your border radius values. If a `default` radius
+      | is provided, it will be made available as the non-suffixed `.rounded`
+      | utility.
+      |
+      | If your scale includes a `0` value to reset already rounded corners, it's
+      | a good idea to put it first so other values are able to override it.
+      |
+      | Class name: .u-rounded{-side?}{-size?}
+      |
+      */
+
+      borderRadius: {
+        none: '0',
+        sm: '.125rem',
+        default: '.25rem',
+        lg: '.5rem',
+        full: '9999px',
       },
     },
   },
