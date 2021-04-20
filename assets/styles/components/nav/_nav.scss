@@ -1,8 +1,11 @@
 .overlay {
   height: 0;
   transition: 0.5s;
-}
+  .overlay a {
+    transition: 0.3s;
+  }
 
-.overlay a {
-  transition: 0.3s;
+  @include breakpoint($--screens--md) {
+    outline: 2px solid $--colors--primary;
+  }
 }
