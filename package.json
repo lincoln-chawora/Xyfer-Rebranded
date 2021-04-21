@@ -50,19 +50,15 @@
     "lodash": "npx lodash-cli strict -o ./dist/lodash.js include=$( grep -roh \"_\\.[[:alpha:]]*\" /assets/js/ --include=*.js | sort | uniq | cut -b 3- | tr \"\n\" \",\" )",
     "composer:install": "composer install",
     "postinstall": "run-s tailwind:config-export postinstall:build",
-    "postinstall:build": "if [ \"$NODE_ENV\" != \"production\" ]; then npm run start; fi",
-    "postinstall:lodash": "npm run lodash",
-    "postinstall:composer": "npm run composer:install"
+    "postinstall:build": "if [ \"$NODE_ENV\" != \"production\" ]; then npm run build; fi",
+    "postinstall:lodash": "npm run lodash"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind.git"
+    "url": "https://github.com/lincoln-chawora/Xyfer-Rebranded"
   },
-  "author": "Taylor Bryant",
+  "author": "Lincoln Chawora",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind/issues"
-  },
   "publishConfig": {
     "access": "public"
   },

@@ -110,7 +110,10 @@ _.forEach(colors, (value, key) => {
 });
 
 module.exports = {
-  purge: [`_site/**/*.html`],
+  purge: {
+    enabled: true,
+    content: ['_site/**/*.html'],
+  },
   theme: {
     extend: {
       /*

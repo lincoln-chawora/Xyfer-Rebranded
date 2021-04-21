@@ -32,9 +32,9 @@ A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https:
 * `npm ci` to install npm packages listed in `package-lock.json`
 * `npm run start` or `npm run dev` to compile the site with development settings and run BrowserSync
 
-## Build your site
-* `npm run build:dev` to compile the site with development settings
-* `npm run build:production` or `npm run build` to compile the site for production
+## Build site
+* `npm run build` to compile the site with development settings
+* `npm run build-prod`
 
 
 ## Deploy
