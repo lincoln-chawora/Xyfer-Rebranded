@@ -29,8 +29,9 @@ A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https:
 
 ## Get started
 * `bundle install` to install Ruby gems
+* `composer install` to install libraries
 * `npm ci` to install npm packages listed in `package-lock.json`
-* `npm run start` or `npm run dev` to compile the site with development settings and run BrowserSync
+* `npm run build` or `npm run watch` to compile the site with development settings and run BrowserSync
 
 ## Build site
 * `npm run build` to compile the site with development settings
