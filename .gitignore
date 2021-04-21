@@ -5,6 +5,7 @@ _site
 .jekyll-metadata
 assets/styles/_tailwind-variables.scss
 assets/data/tailwind-values.json
+assets/css
 node_modules
 .bundle/
 vendor

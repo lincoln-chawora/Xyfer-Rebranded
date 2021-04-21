@@ -5,6 +5,7 @@ collections:
     output: true
 
 baseurl: "/Xyfer-Rebranded"
+img_dir: "/Xyfer-Rebranded/assets/images"
 url: "https://lincoln-chawora.github.io/Xyfer-Rebranded/"
 
 defaults:
@@ -22,7 +23,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-img_dir: "/assets/images"
 
 exclude:
   - Gemfile
@@ -35,6 +35,8 @@ exclude:
   - dist
   - package.json
   - package-lock.json
+  - composer.json
+  - composer.lock
   - README.md
   - src
   - tailwind.js
