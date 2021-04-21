@@ -4,6 +4,9 @@ collections:
   authors:
     output: true
 
+baseurl: "/Xyfer-Rebranded"
+url: "https://lincoln-chawora.github.io/Xyfer-Rebranded/"
+
 defaults:
   - scope:
       path: ""
