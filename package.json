@@ -42,7 +42,7 @@
     "postcss": "postcss ./assets/dist/css/*.css --replace --map",
     "watch": "npm run build-gulp && npm run build && run-p browsersync watch:**",
     "watch:colour-overrides": "onchange -k './assets/styles/overrides/_03-colour-overrides.scss' -- onerror \"npm run-s tailwind:config-export build:css browsersync:reload\" --title \"There was a SCSS compilation error\"",
-    "watch:html": "onchange -k './_layouts/author.html' -- run-s build-gulp build browsersync:reload",
+    "watch:html": "onchange -k './**/*.html' -e './_site/**/*.html' -- run-s build-gulp build browsersync:reload",
     "watch:js": "onchange -k './assets/js/**/*.js' -- onerror \"run-s build:js browsersync:reload-js\" --title \"There was a JS formatting or syntax error\"",
     "watch:scss": "onchange -k './assets/styles/**/*.scss' -- onerror \"run-s build:css browsersync:reload-css\" --title \"There was a SCSS compilation error\"",
     "tailwind:config-export": "node ./scripts/tailwind-config-export.js",
