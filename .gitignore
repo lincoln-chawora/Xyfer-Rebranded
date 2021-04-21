@@ -1,5 +1,6 @@
-_site
 .DS_Store
+.idea
+_site
 .jekyll-cache
 .jekyll-metadata
 assets/styles/_tailwind-variables.scss
@@ -8,4 +9,3 @@ node_modules
 .bundle/
 vendor
 libraries
-dist
