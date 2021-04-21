@@ -39,7 +39,7 @@
     "browsersync:reload-css": "browser-sync reload --url http://localhost:4000 --files=\"*.css\"",
     "browsersync:reload-js": "browser-sync reload --url http://localhost:4000 --files=\"*.js\"",
     "scss": "node-sass --output-style compressed --include-path libraries --importer node_modules/node-sass-magic-importer/dist/cli.js --source-map true --output ./assets/css ./assets/styles",
-    "postcss": "postcss ./_site/assets/css/*.css --replace --map",
+    "postcss": "postcss ./assets/css/*.css --replace --map",
     "watch": "npm run build-gulp && npm run build && run-p browsersync watch:**",
     "watch:colour-overrides": "onchange -k './assets/styles/overrides/_03-colour-overrides.scss' -- onerror \"npm run-s tailwind:config-export build:css browsersync:reload\" --title \"There was a SCSS compilation error\"",
     "watch:html": "onchange -k './_layouts/author.html' -- run-s build-gulp build browsersync:reload",
