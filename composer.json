@@ -19,10 +19,16 @@
         "cweagans/composer-patches": "^1.7",
         "oomphinc/composer-installers-extender": "^2.0",
         "npm-asset/vue": "^2.5",
-        "npm-asset/bootstrap": "^4.6"
+        "npm-asset/bootstrap": "^4.6",
+        "slowprog/composer-copy-file": "^0.3.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "SlowProg\\CopyFile\\ScriptHandler::copy"
+        ]
+    },
     "extra": {
         "installer-types": [
             "npm-asset"
@@ -31,6 +37,9 @@
             "libraries/{$name}": [
                 "type:npm-asset"
             ]
+        },
+        "copy-file": {
+            "libraries/vue/dist/vue.min.js": "assets/dist/js/vue.min.js"
         }
     }
 }

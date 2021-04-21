@@ -27,7 +27,7 @@
     "node": "12"
   },
   "scripts": {
-    "move-js": "copyfiles './assets/js/*.js' ./_site",
+    "move-js": "copyfiles -u 2 ./assets/js/*.js ./assets/dist/js",
     "build:css": "run-s scss postcss",
     "build:js": "run-s move-js",
     "build": "run-p build:**",
@@ -38,11 +38,11 @@
     "browsersync:reload": "browser-sync reload --url http://localhost:4000",
     "browsersync:reload-css": "browser-sync reload --url http://localhost:4000 --files=\"*.css\"",
     "browsersync:reload-js": "browser-sync reload --url http://localhost:4000 --files=\"*.js\"",
-    "scss": "node-sass --output-style compressed --include-path libraries --importer node_modules/node-sass-magic-importer/dist/cli.js --source-map true --output ./assets/css ./assets/styles",
-    "postcss": "postcss ./assets/css/*.css --replace --map",
+    "scss": "node-sass --output-style compressed --include-path libraries --importer node_modules/node-sass-magic-importer/dist/cli.js --source-map true --output ./assets/dist/css ./assets/styles",
+    "postcss": "postcss ./assets/dist/css/*.css --replace --map",
     "watch": "npm run build-gulp && npm run build && run-p browsersync watch:**",
     "watch:colour-overrides": "onchange -k './assets/styles/overrides/_03-colour-overrides.scss' -- onerror \"npm run-s tailwind:config-export build:css browsersync:reload\" --title \"There was a SCSS compilation error\"",
-    "watch:html": "onchange -k './_layouts/author.html' -- run-s build-gulp build browsersync:reload",
+    "watch:html": "onchange -k './**/*.html' -e './_site/**/*.html' -- run-s build-gulp build browsersync:reload",
     "watch:js": "onchange -k './assets/js/**/*.js' -- onerror \"run-s build:js browsersync:reload-js\" --title \"There was a JS formatting or syntax error\"",
     "watch:scss": "onchange -k './assets/styles/**/*.scss' -- onerror \"run-s build:css browsersync:reload-css\" --title \"There was a SCSS compilation error\"",
     "tailwind:config-export": "node ./scripts/tailwind-config-export.js",
