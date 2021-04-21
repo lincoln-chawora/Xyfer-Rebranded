@@ -1,5 +1,5 @@
 <section class="hero u-w-screen u-h-screen u-flex u-justify-center u-items-center u-text-center u-bg-cover u-bg-center u-bg-no-repeat" style="background: url('{{ site.img_dir }}/{{ include.img_src }}')">
-    <div class="u-text-white">
+    <div class="u-text-white u-bg-black u-bg-opacity-50 u-rounded u-px-2">
         {% include components/atoms/heading.html heading_level=1 heading_classes="u-text-hero u-mt-0 u-mb-1" omit_base_class=true heading=include.title %}
         {% if include.subheading %}
             {% include components/atoms/heading.html heading=include.subheading %}

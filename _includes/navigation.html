@@ -5,7 +5,7 @@
   </div>
   <nav class="overlay u-w-full u-fixed u-z-1 u-top-0 u-right-0 u-overflow-y-hidden u-bg-black u-bg-opacity-90" :class="{ 'u-h-full': isOpen}">
     <a href="javascript:void(0)" class="u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" @click="isOpen = !isOpen">&times;</a>
-    <div class="overlay-content u-w-full u-position-relative u-text-center u-mt-4 u-top-1/4">
+    <div class="overlay-content u-w-full u-relative u-text-center u-mt-4 u-top-1/4">
       {% for item in site.data.navigation %}
         {% capture link_classes %}{% if page.url == item.link %}u-text-secondary{% else %} u-text-gray-400 {% endif %} u-text-h3 u-p-1 u-block hover:u-text-white{% endcapture %}
         {% include components/atoms/link.html link_classes=link_classes link=item.link link_text=item.name %}
