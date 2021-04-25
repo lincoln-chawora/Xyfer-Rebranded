@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Xyfer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Xyfer-Rebranded/assets/dist/css/style.css" />
+    <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/vue.min.js"></script>
+    <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/nav.js"></script>
+    
+    
+        <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/typewriter.js"></script>
+    
+</head>
+  <div id="nav-bar" class="u-z-1 u-right-0 u-pr-1 u-w-full  u-absolute ">
+  <div class="u-flex u-justify-between u-text-h4 u-text-white">
+    <span>
+      <a class="hover:u-no-underline u-text-white hover:u-text-gray-400" href="/" >Xyfer</a>
+    </span>
+    <span class="u-cursor-pointer hover:u-text-gray-400" @click="isOpen = !isOpen">&#9776; open</span>
+  </div>
+  <nav class="overlay u-w-full u-fixed u-z-1 u-top-0 u-right-0 u-overflow-y-hidden u-bg-black u-bg-opacity-90" :class="{ 'u-h-full': isOpen}">
+    <a class="hover:u-no-underline u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" href="javascript:void(0)" @click='isOpen = !isOpen'>&times;</a>
+    <div class="overlay-content u-w-full u-relative u-text-center u-mt-4 u-top-1/4">
+      
+        
+        <a class="hover:u-no-underline u-text-secondary u-text-h3 u-p-1 u-block hover:u-text-white" href="/" >Home</a>
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="#" >About</a>
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="#" >Blog</a>
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="#" >Staff</a>
+      
+    </div>
+  </nav>
+</div>
+
+    <body>
+      <main class="container">
+        
+<section class="u-breakout hero u-w-screen u-h-screen u-flex u-justify-center u-items-center u-text-center u-bg-cover u-bg-center u-bg-no-repeat" style="background: url('/Xyfer-Rebranded/assets/images/lincoln.jpg')">
+    <div class="u-text-white u-bg-black u-bg-opacity-50 u-rounded u-p-3">
+        
+
+
+
+<h1 class="u-text-h2 lg:u-text-hero u-mt-0 u-mb-1">Lincoln Chawora</h1>
+        
+            
+
+
+
+<h2 class="u-text-h3 lg:u-text-h2">Full-stack Developer</h2>
+        
+
+        
+            
+    <a disabled href="" class="typewrite u-pointer-events-none u-text-h4 u-text-white" data-period="2000" data-type='[ "I am creative.", "I am happy.", "I am determined.", "I am learning.", "I am Lincoln." ]'>
+        <span class="wrap u-border-r-1"></span>
+    </a>
+
+        
+    </div>
+</section>
+
+      </main>
+    </body>
+  <footer></footer>
+</html>

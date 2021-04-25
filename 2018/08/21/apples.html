@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Xyfer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Xyfer-Rebranded/assets/dist/css/style.css" />
+    <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/vue.min.js"></script>
+    <script type="text/javascript" src="/Xyfer-Rebranded/assets/dist/js/nav.js"></script>
+    
+    
+</head>
+  <div id="nav-bar" class="u-z-1 u-right-0 u-pr-1 u-w-full u-bg-black u-text-right">
+  <div class="u-flex u-justify-between u-text-h4 u-text-white">
+    <span>
+      <a class="hover:u-no-underline u-text-white hover:u-text-gray-400" href="/" >Xyfer</a>
+    </span>
+    <span class="u-cursor-pointer hover:u-text-gray-400" @click="isOpen = !isOpen">&#9776; open</span>
+  </div>
+  <nav class="overlay u-w-full u-fixed u-z-1 u-top-0 u-right-0 u-overflow-y-hidden u-bg-black u-bg-opacity-90" :class="{ 'u-h-full': isOpen}">
+    <a class="hover:u-no-underline u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" href="javascript:void(0)" @click='isOpen = !isOpen'>&times;</a>
+    <div class="overlay-content u-w-full u-relative u-text-center u-mt-4 u-top-1/4">
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="/" >Home</a>
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="#" >About</a>
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="#" >Blog</a>
+      
+        
+        <a class="hover:u-no-underline  u-text-gray-400  u-text-h3 u-p-1 u-block hover:u-text-white" href="#" >Staff</a>
+      
+    </div>
+  </nav>
+</div>
+
+    <body>
+      <main class="container">
+        
+
+
+
+<h1 class="u-text-h1 ">Apples</h1>
+
+<p>
+  21 Aug 2018
+  
+  
+  - <a class="hover:u-no-underline " href="/authors/jill.html" >Jill Smith</a>
+  
+</p>
+
+<p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+
+<p>Apple trees are cultivated worldwide, and are the most widely grown species in
+the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+Malus sieversii, is still found today. Apples have been grown for thousands of
+years in Asia and Europe, and were brought to North America by European
+colonists.</p>
+
+      </main>
+    </body>
+  <footer></footer>
+</html>

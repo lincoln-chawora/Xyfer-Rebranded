@@ -1,0 +1,165 @@
+/* stylelint-disable selector-class-pattern */
+
+/* Load some variables from Tailwind.*/
+@import "_tailwind-variables.scss";
+
+@import "overrides/_01-spacing-overrides.scss";
+@import "overrides/_03-colour-overrides.scss";
+
+/* Utility-first CSS. Stop writing new CSS! */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  border-color: config("borderColors.default", currentColor);
+  border-style: solid;
+  border-width: 0;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+img {
+  border-style: solid;
+}
+
+.u-breakout {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+}
+
+.u-gradient-white-grey {
+  background: linear-gradient(
+    180deg,
+    $--colors--white 0%,
+    $--colors--grey-50 100%
+  );
+  background-color: $--colors--grey-50;
+}
+
+.u-content-box {
+  box-sizing: content-box;
+}
+
+@responsive {
+  /*
+  .row {
+    // Make a Tailwind version of the Bootstrap row class (so we can toggle it by breakpoint).
+    @include make-row();
+  }
+
+  .container {
+    // Make a Tailwind version of the Bootstrap container class (so we can toggle it by breakpoint).
+    @include make-container();
+  } */
+
+  .u--overlap-y {
+    transform: translateY(-50%);
+  }
+
+  .u-overlap-y {
+    transform: translateY(50%);
+  }
+
+  .u-un-breakout {
+    position: inherit;
+    right: inherit;
+    left: inherit;
+    width: inherit;
+    margin-right: inherit;
+    margin-left: inherit;
+  }
+
+  .u-flex-wrap-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .u-box-clone {
+    box-decoration-break: clone;
+  }
+
+  /* Bit naughty adding to a utility like this, but the webkit overflow thing has caught us all
+    out enough times before for it to be justifiable I hope!
+  .u-overflow-scroll,
+  .u-overflow-x-scroll,
+  .u-overflow-y-scroll {
+    @apply u-scrolling-touch;
+  } */
+}
+
+.u-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px 1px 1px 1px) !important; /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+
+.u-visually-hidden.is-focusable:active,
+.u-visually-hidden.is-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: inherit !important;
+}
+
+/*
+.u-transition {
+  @include transition($transition-base);
+
+  will-change: opacity, transform, max-height;
+} */
+
+.u-transition-slow {
+  transition: all 0.65s ease-in-out;
+  will-change: opacity, transform, max-height;
+}
+
+.u-transition-none {
+  transition: none !important;
+}
+
+/*
+.u-transition-transform {
+  @include transition(transform 0.2s ease-in-out);
+}
+*/
+
+.u-cursor-unset {
+  cursor: unset !important;
+}
+
+.u-show-only-first > :not(:first-child) {
+  display: none;
+}
+
+.u-cursor-help {
+  cursor: help;
+}
+
+.u-col-break-avoid {
+  break-inside: avoid;
+}
+
+/* stylelint-enable */
