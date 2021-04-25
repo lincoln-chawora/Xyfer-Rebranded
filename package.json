@@ -51,8 +51,7 @@
     "watch:tailwind": "onchange -k './tailwind.js' -- onerror \"npm run-s tailwind:config-export build:css browsersync:reload\" --title \"There was a SCSS compilation error\"",
     "lodash": "npx lodash-cli strict -o ./dist/lodash.js include=$( grep -roh \"_\\.[[:alpha:]]*\" /assets/js/ --include=*.js | sort | uniq | cut -b 3- | tr \"\n\" \",\" )",
     "composer:install": "composer install",
-    "postinstall": "run-s tailwind:config-export postinstall:build",
-    "postinstall:build": "if [ \"$NODE_ENV\" != \"production\" ]; then npm run build; fi",
+    "postinstall": "run-s tailwind:config-export",
     "postinstall:lodash": "npm run lodash"
   },
   "repository": {
