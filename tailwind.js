@@ -110,10 +110,6 @@ _.forEach(colors, (value, key) => {
 });
 
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['_site/**/*.html'],
-  },
   theme: {
     extend: {
       /*
@@ -374,6 +370,21 @@ module.exports = {
       */
 
       margin: {
+        auto: 'auto',
+        '0': '0',
+        '1': `${spacingValue}px`,
+        '2': `${spacingValue * 2}px`,
+        '3': `${spacingValue * 3}px`,
+        '4': `${spacingValue * 4}px`,
+        '5': `${spacingValue * 5}px`,
+        '6': `${spacingValue * 6}px`,
+        '7': `${spacingValue * 7}px`,
+        '8': `${spacingValue * 8}px`,
+        '9': `${spacingValue * 9}px`,
+        '10': `${spacingValue * 10}px`,
+        '11': `${spacingValue * 11}px`,
+      },
+      space: {
         auto: 'auto',
         '0': '0',
         '1': `${spacingValue}px`,

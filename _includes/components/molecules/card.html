@@ -1,10 +1,10 @@
-<div>
+<div class="u-flex row" data-card>
     {% if include.img_src %}
-        <div>
-            {% include components/atoms/image.html img_src=include.img_src img_alt=include.img_alt class="u-w-1/2 u-border-4 u-border-pink-400" %}
+        <div class="col-4">
+            {% include components/atoms/image.html img_src=include.img_src img_alt=include.img_alt class="" %}
         </div>
     {% endif %}
-    <div>
+    <div class="col-8 u-py-3">
         {{ include.title }}
         {{ include.content }}
         {% include components/atoms/link.html link_classes="u-font-bold u-underline" link=include.link link_text=include.link_text %}

@@ -1,20 +1,23 @@
 ---
 layout: default
+card: true
 ---
 {% capture page_title %}
   {{ page.name }}'s Landing Page
 {% endcapture %}
+
 {% include components/atoms/heading.html heading_level=1 heading=page_title %}
+
 {% include components/atoms/heading.html heading=page.position %}
 
 {{ content }}
 
 {% include components/atoms/heading.html heading="Posts" %}
-<ul>
+<ul class="u-space-y-2">
   {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
   {% for post in filtered_posts %}
-    <li>
-      {% include components/atoms/link.html link=post.url link_text=post.title %}
+    <li class="u-border-b-2 u-pb-2">
+      {% include components/molecules/card.html img_src=post.image img_alt=post.image_alt title=post.title content=post.excerpt link=post.url link_text="Read More" %}
     </li>
   {% endfor %}
 </ul>
