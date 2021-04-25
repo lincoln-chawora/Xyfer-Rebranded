@@ -1,15 +1,13 @@
+@import "~modularscale-sass";
+@import "~bootstrap";
+@import "~breakpoint-sass";
+
 @import "tailwind-variables";
+
 @import "tailwind";
 
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins/grid";
-@import "bootstrap/scss/mixins/grid-framework";
-@import "bootstrap/scss/mixins/forms";
-@import "bootstrap/scss/mixins/transition";
-@import "bootstrap/scss/mixins/buttons";
-
-@import "~breakpoint-sass";
+$ms-ratio: $major-third; // 1.25
+$ms-base: 16px;
 
 @import "overrides/**/*.scss";
 @import "components/**/*.scss";

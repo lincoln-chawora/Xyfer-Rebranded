@@ -19,7 +19,6 @@
         "cweagans/composer-patches": "^1.7",
         "oomphinc/composer-installers-extender": "^2.0",
         "npm-asset/vue": "^2.5",
-        "npm-asset/bootstrap": "^4.6",
         "slowprog/composer-copy-file": "^0.3.3"
     },
     "minimum-stability": "dev",

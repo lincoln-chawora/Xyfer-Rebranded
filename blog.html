@@ -1,13 +1,16 @@
 ---
 layout: default
 title: 'Latest Posts'
+card: true
 ---
-{% include components/atoms/heading.html heading_level=1 heading=page.title %}
+<div>
+  {% include components/atoms/heading.html heading_level=1 heading=page.title %}
 
-<ul>
-  {% for post in site.posts %}
-  <li class="u-border-b-2">
-    {% include components/molecules/card.html img_src=post.image img_alt=post.image_alt title=post.title content=post.excerpt link=post.url link_text="Read More" %}
-  </li>
-  {% endfor %}
-</ul>
+  <ul class="u-space-y-2">
+    {% for post in site.posts %}
+    <li class="u-border-b-2 u-pb-2">
+      {% include components/molecules/card.html img_src=post.image img_alt=post.image_alt title=post.title content=post.excerpt link=post.url link_text="Read More" %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

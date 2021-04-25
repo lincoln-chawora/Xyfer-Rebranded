@@ -4,7 +4,13 @@
     <title>Xyfer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="{{ '/assets/dist/css/style.css' | relative_url }}" />
-    <script type="text/javascript" src="{{ 'assets/dist/js/jquery-3.6.0.min.js' | relative_url }}" ></script>
-    <script type="text/javascript" src="{{ 'assets/dist/js/vue.min.js' | relative_url }}" ></script>
-    <script type="text/javascript" src="{{ 'assets/dist/js/nav.js' | relative_url }}" ></script>
+    <script type="text/javascript" src="{{ 'assets/dist/js/jquery-3.6.0.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/dist/js/vue.min.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ 'assets/dist/js/nav.js' | relative_url }}"></script>
+    {% if page.card or layout.card %}
+        <script type="text/javascript" src="{{ 'assets/dist/js/card.js' | relative_url }}"></script>
+    {% endif %}
+    {% if page.type_writer %}
+        <script type="text/javascript" src="{{ 'assets/dist/js/typewriter.js' | relative_url }}"></script>
+    {% endif %}
 </head>

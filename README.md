@@ -37,15 +37,6 @@ A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https:
 * `npm run build` to compile the site with development settings
 * `npm run build-prod`
 
-
-## Deploy
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/jekyll-starter-tailwind)
-
-Note: By default, Netlify uses `jekyll build` as the build command. The included `netlify.toml` file will override it to use `npm run build`.
-
-## License
-[MIT](https://github.com/taylorbryant/jekyll-starter-tailwind/blob/master/LICENSE.md)
-
 ## How you can help
 Enjoying Jekyll Starter Tailwind and want to help? You can:
 * [Create an issue](https://github.com/taylorbryant/jekyll-starter-tailwind/issues/new) with some constructive criticism

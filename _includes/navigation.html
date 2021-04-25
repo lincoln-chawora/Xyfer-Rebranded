@@ -1,10 +1,12 @@
-<div id="nav-bar" class="u-right-0 u-pr-1 u-w-full {% if page.url != '/' %}u-bg-black u-text-right{% else %} u-absolute {% endif %}">
+<div id="nav-bar" class="u-z-1 u-right-0 u-pr-1 u-w-full {% if page.url != '/' %}u-bg-black u-text-right{% else %} u-absolute {% endif %}">
   <div class="u-flex u-justify-between u-text-h4 u-text-white">
-    <span><a href="/">Xyfer</a></span>
+    <span>
+      {% include components/atoms/link.html link_classes="u-text-white hover:u-text-gray-400" link="/" link_text="Xyfer" %}
+    </span>
     <span class="u-cursor-pointer hover:u-text-gray-400" @click="isOpen = !isOpen">&#9776; open</span>
   </div>
   <nav class="overlay u-w-full u-fixed u-z-1 u-top-0 u-right-0 u-overflow-y-hidden u-bg-black u-bg-opacity-90" :class="{ 'u-h-full': isOpen}">
-    <a href="javascript:void(0)" class="u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" @click="isOpen = !isOpen">&times;</a>
+    {% include components/atoms/link.html link_classes="u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" attributes="@click='isOpen = !isOpen'" link="javascript:void(0)" link_text="&times;" %}
     <div class="overlay-content u-w-full u-relative u-text-center u-mt-4 u-top-1/4">
       {% for item in site.data.navigation %}
         {% capture link_classes %}{% if page.url == item.link %}u-text-secondary{% else %} u-text-gray-400 {% endif %} u-text-h3 u-p-1 u-block hover:u-text-white{% endcapture %}
