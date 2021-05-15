@@ -6,14 +6,19 @@ title: Staff
 
 <ul>
   {% for author in site.authors %}
-  <li>
-    {% capture author_link %}
-      {% include components/atoms/link.html link=author.url link_text=author.name %}
-    {% endcapture %}
-    {% include components/atoms/heading.html heading=author_link %}
+    <li>
+      <!-- {% if author.author_image %}
+        {% include components/atoms/image.html img_src=author.author_image img_alt=author.author_image_alt class="" %}
+      {% endif %}
+      -->
 
-    {% include components/atoms/heading.html heading_level=3 heading=author.position %}
-    <p>{{ author.content | markdownify }}</p>
-  </li>
+      {% capture author_link %}
+        {% include components/atoms/link.html link=author.url link_text=author.name %}
+      {% endcapture %}
+      {% include components/atoms/heading.html heading=author_link %}
+
+      {% include components/atoms/heading.html heading_level=3 heading=author.position %}
+      <p>{{ author.content | markdownify }}</p>
+    </li>
   {% endfor %}
 </ul>

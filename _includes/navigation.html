@@ -1,17 +1,25 @@
-<div id="nav-bar" class="u-z-1 u-right-0 u-pr-1 u-w-full {% if page.url != '/' %}u-bg-black u-text-right{% else %} u-absolute {% endif %}">
-  <div class="u-flex u-justify-between u-text-h4 u-text-white">
-    <span>
-      {% include components/atoms/link.html link_classes="u-text-white hover:u-text-gray-400" link="/" link_text="Xyfer" %}
-    </span>
-    <span class="u-cursor-pointer hover:u-text-gray-400" @click="isOpen = !isOpen">&#9776; open</span>
-  </div>
-  <nav class="overlay u-w-full u-fixed u-z-1 u-top-0 u-right-0 u-overflow-y-hidden u-bg-black u-bg-opacity-90" :class="{ 'u-h-full': isOpen}">
-    {% include components/atoms/link.html link_classes="u-text-gray-400 u-text-h1 u-absolute hover:u-text-white u-right-0 u-top-0 u-mr-5" attributes="@click='isOpen = !isOpen'" link="javascript:void(0)" link_text="&times;" %}
-    <div class="overlay-content u-w-full u-relative u-text-center u-mt-4 u-top-1/4">
-      {% for item in site.data.navigation %}
-        {% capture link_classes %}{% if page.url == item.link %}u-text-secondary{% else %} u-text-gray-400 {% endif %} u-text-h3 u-p-1 u-block hover:u-text-white{% endcapture %}
-        {% include components/atoms/link.html link_classes=link_classes link=item.link link_text=item.name %}
-      {% endfor %}
+<nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark u-flex-col-reverse u-items-end lg:u-items-start">
+    <button class="navbar-toggler" @click="isOpen = !isOpen" type="button" data-toggle="collapse" data-target="#navy-collapse" aria-controls="navy-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse container" id="navy-collapse" :class="{ 'show': isOpen}">
+        <ul class="navbar-nav mr-auto">
+          {% for item in site.data.navigation %}
+            <li class="nav-item {% if page.url == item.link %}active{% endif %} {% if item.children %}dropdown{% endif %}" {% if item.children %}@click="isOpen = !isOpen"{% endif %}>
+                {% capture nav_link_classes %}
+                    nav-link {% if item.children %}dropdown-toggle{% endif %}
+                {% endcapture %}
+                {% include components/atoms/link.html link_classes=nav_link_classes link=item.link link_text=item.name %}
+
+                {% if item.children %}
+                    <div class="dropdown-menu" :class="{ 'show': isOpen}">
+                        {% for child in item.children %}
+                            {% include components/atoms/link.html link_classes="dropdown-item" link=child.link link_text=child.name %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
     </div>
-  </nav>
-</div>
+</nav>
