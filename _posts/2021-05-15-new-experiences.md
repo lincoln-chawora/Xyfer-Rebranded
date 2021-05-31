@@ -1,6 +1,8 @@
 ---
 layout: post
 author: lincoln
+image: 'lel.JPG'
+image_alt: 'Lincoln being happy'
 ---
 Okay so today was the day, good day bad day? good i think, interesting to grow and discovered!
 
@@ -32,13 +34,9 @@ Things when [redacted] (real time account)
 2. It’s circle (you experience the moment) it spins a bit more, you come out and experience the moment from before
 3. I’m recognising time based on past events the have come (you’re sounding like bullshit and you know it)
 
-
 New question for later
 [redacted - info in the original]
-
 
 Got home and now I’m Hella hype listening to Yelawolf whilst eating sensations
 
 ---
-
-

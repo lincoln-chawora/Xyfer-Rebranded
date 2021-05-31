@@ -1,0 +1,17 @@
+.card-c {
+  img {
+    height: 275px;
+  }
+
+  &--author {
+    img {
+      height: 200px;
+      width: 200px !important;
+    }
+    &:hover {
+      img {
+        @apply u-border-secondary;
+      }
+    }
+  }
+}

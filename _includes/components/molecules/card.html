@@ -1,12 +1,19 @@
-<div class="u-flex row" data-card>
+<div class="card-c u-flex u-flex-col md:u-flex-row {% if include.card_type == 'author' %}card-c--author u-text-center md:u-text-left{% endif %} {{ include.card_classes }}" data-card>
     {% if include.img_src %}
-        <div class="col-4">
-            {% include components/atoms/image.html img_src=include.img_src img_alt=include.img_alt class="" %}
+        <div class="{% if include.card_type == 'author' %}u-flex u-justify-center{% else %}md:u-w-1/4{% endif %}">
+            {% capture image_classes %}u-object-cover u-w-full {% if include.card_type == 'author' %}u-rounded-full u-border-6{% endif %}{% endcapture  %}
+            {% include components/atoms/image.html img_src=include.img_src img_alt=include.img_alt class=image_classes %}
         </div>
     {% endif %}
-    <div class="col-8 u-py-3">
-        {{ include.title }}
+    {% capture content_classes %}u-p-2 md:u-p-3 u-space-y-1
+        {% if include.card_type == 'author' %}u-flex u-flex-col u-justify-center{% else %}u-bg-grey-25 hover:u-bg-grey-50{% endif %}
+        {% if include.card_type != 'author' %}{% if include.img_src %}md:u-w-3/4{% else %}u-w-full{% endif %}{% endif %}
+    {% endcapture  %}
+    <div class="{{ content_classes}}">
+        {% include components/atoms/heading.html heading=include.title heading_level=3 %}
         {{ include.content }}
-        {% include components/atoms/link.html link_classes="u-font-bold u-underline" link=include.link link_text=include.link_text %}
+        {% if include.link %}
+            {% include components/atoms/link.html link_classes="u-font-bold u-underline" link=include.link link_text=include.link_text %}
+        {% endif %}
     </div>
 </div>
