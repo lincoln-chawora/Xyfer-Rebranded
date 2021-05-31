@@ -8,8 +8,15 @@ module.exports = {
       content: [
           '_site/**/*.html',
           '_site/*.html'
-        ]
-      }
-      : false,
+      ],
+      extractors: [
+        {
+          extractor: content => {
+            return content.match(/[A-z0-9-:\/]+/g) || [];
+          },
+          extensions: ['css', 'scss', 'html']
+        }
+      ]
+    } : false,
   }
 }
