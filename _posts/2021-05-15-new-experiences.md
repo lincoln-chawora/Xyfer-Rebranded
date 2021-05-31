@@ -9,7 +9,7 @@ Okay so today was the day, good day bad day? good i think, interesting to grow a
 #Okay, how it begun
 - talk, offer, accepted (skeptically), went, met, walked, talked, took pics, talked, drove
 - new offer, i accept, nothing at first and then suddenly i was in- in the ZONE,
-- a different experince
+- a different experience
     - songs more enjoyable
     - trying to enjoy the moment 
     - trying not to be in my head 
