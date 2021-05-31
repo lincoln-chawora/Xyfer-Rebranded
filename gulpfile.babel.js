@@ -1,13 +1,10 @@
 import spawn from "cross-spawn";
 import { series, task } from "gulp";
 
-// Fix for Windows compatibility
-const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
-
 const isDevelopmentBuild = process.env.NODE_ENV === "development";
 
 task("buildJekyll", () => {
-  const args = ["exec", jekyll, "build"];
+  const args = ["exec", "jekyll", "build"];
 
   if (isDevelopmentBuild) {
     args.push("--incremental");
