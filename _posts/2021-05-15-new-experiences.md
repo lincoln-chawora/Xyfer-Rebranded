@@ -1,7 +1,7 @@
 ---
 layout: post
 author: lincoln
-image: 'lel.JPG'
+image: 'that-night.jpg'
 image_alt: 'Lincoln being happy'
 ---
 Okay so today was the day, good day bad day? good i think, interesting to grow and discovered!
