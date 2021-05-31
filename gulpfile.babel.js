@@ -1,8 +1,6 @@
 import spawn from "cross-spawn";
 import { series, task } from "gulp";
 
-const SITE_ROOT = "./_site";
-
 // Fix for Windows compatibility
 const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 
