@@ -11,6 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install and build
         run: |
+          gem install bundler
           bundle install
           composer install
           npm install
