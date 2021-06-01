@@ -7,11 +7,14 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
+      - name: 💎 setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install and build
         run: |
-          gem install bundler
           bundle install
           composer install
           npm install
